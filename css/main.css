@@ -1,0 +1,154 @@
+:root {
+  --mainWhite: #f5f5f5f5;
+  --mainDark: #333333;
+  --mainGreen: #317b22;
+  --mainRed: #b80c09;
+  --mainBlue: #05668d;
+}
+body {
+  background: var(--mainWhite);
+  color: var(--mainDark);
+}
+.app-title {
+  color: #135dd6;
+}
+
+/* budget feedback  */
+.budget-feedback,
+.expense-feedback {
+  display: none;
+}
+.budget-form {
+  border: 0.15rem solid var(--mainGreen);
+  padding: 1rem;
+  border-radius: 0.25rem;
+}
+.budget-submit {
+  background: transparent;
+  border: 0.1rem solid var(--mainGreen);
+  color: var(--mainGreen);
+}
+.budget-submit:hover {
+  background: var(--mainGreen);
+  color: var(--mainWhite);
+}
+.budget-input {
+  border: 0.05rem solid var(--mainGreen) !important;
+}
+/* end of budget feedback  */
+
+
+/* Budget-Expense-Balance */
+.info-title {
+  font-size: 1.5rem;
+}
+.budget {
+  font-size: 1.6rem;
+  color: var(--mainGreen);
+}
+.expense {
+  font-size: 1.6rem;
+  color: var(--mainRed);
+}
+.balance {
+  font-size: 1.6rem;
+}
+.budget-icon,
+.expense-icon,
+.balance-icon {
+  font-size: 2.5rem;
+  color: var(--mainBlue);
+}
+@media screen and (min-width: 992px) {
+  .budget {
+    font-size: 2rem;
+    color: var(--mainGreen);
+  }
+  .expense {
+    font-size: 2rem;
+    color: var(--mainRed);
+  }
+  .balance {
+    font-size: 2rem;
+  }
+  .budget-icon,
+  .expense-icon,
+  .balance-icon {
+    font-size: 4rem;
+    color: var(--mainBlue);
+  }
+}
+/* end of Budget-Expense-Balance */
+
+
+/* expense feedback  */
+.expense-form {
+  border: 0.15rem solid var(--mainRed);
+  padding: 1rem;
+  border-radius: 0.25rem;
+}
+.expense-submit {
+  background: transparent;
+  border: 0.1rem solid var(--mainRed);
+  color: var(--mainRed);
+}
+.expense-submit:hover {
+  background: var(--mainRed);
+  color: var(--mainWhite);
+}
+.expense-input {
+  border: 0.05rem solid var(--mainRed) !important;
+}
+/* expense feedback  */
+
+
+/* single expense */
+.expense-amount,
+.expense-title {
+  color: var(--mainRed);
+  font-size: 1.5rem;
+}
+.edit-icon {
+  color: var(--mainBlue);
+  cursor: pointer;
+  font-size: 1.4rem;
+  text-decoration: none !important;
+}
+.delete-icon {
+  color: var(--mainRed);
+  cursor: pointer;
+  font-size: 1.4rem;
+  text-decoration: none !important;
+}
+.edit-icon:hover {
+  color: var(--mainBlue);
+}
+.delete-icon:hover {
+  color: var(--mainRed);
+}
+.expense-item {
+  height: 2rem;
+}
+/* end of single expense */
+
+
+.showItem {
+  display: block;
+}
+.showRed {
+  color: var(--mainRed);
+}
+.showGreen {
+  color: var(--mainGreen);
+}
+.showBlack {
+  color: var(--mainDark);
+}
+
+
+/* expense-list */
+.list-item {
+  flex: 0 0 33.33%;
+  text-align: center;
+}
+
